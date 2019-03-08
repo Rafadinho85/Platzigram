@@ -3,6 +3,5 @@
     <string name="title_activity_referencia">ReferenciaActivity</string>
     <string name="hint_user_name">Nombre de usuario</string>
     <string name="hint_password">Constraseña</string>
-    <string name="text_button_login">Iniciar</string>
 
 </resources>
