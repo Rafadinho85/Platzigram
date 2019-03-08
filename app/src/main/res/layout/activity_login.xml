@@ -66,16 +66,12 @@
 
             </android.support.design.widget.TextInputLayout>
 
-<<<<<<< HEAD
             <Button
                 android:id="@+id/login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/text_button_login"
                 android:theme="@style/RaiseButtonDark" />
-=======
-
->>>>>>> parent of 4755d4d... Rised Button
 
         </LinearLayout>
 
