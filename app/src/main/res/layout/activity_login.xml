@@ -31,53 +31,67 @@
 
         </RelativeLayout>
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.4"
-            android:orientation="vertical"
+            android:fillViewport="true"
             >
 
-            <android.support.design.widget.TextInputLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:padding="@dimen/paddin_horizontal_login"
+                android:orientation="vertical"
+                >
 
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/username"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/hint_user_name"
+                    android:theme="@style/EditTextWhite"
                     >
 
-                </android.support.design.widget.TextInputEditText>
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_user_name"
+                        >
 
-            </android.support.design.widget.TextInputLayout>
+                    </android.support.design.widget.TextInputEditText>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/password"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:hint="@string/hint_password"
+                    android:theme="@style/EditTextWhite"
                     >
 
-                </android.support.design.widget.TextInputEditText>
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:hint="@string/hint_password"
+                        >
 
-            </android.support.design.widget.TextInputLayout>
+                    </android.support.design.widget.TextInputEditText>
 
-            <Button
-                android:id="@+id/login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_button_login"
-                android:theme="@style/RaiseButtonDark"
-                />
+                </android.support.design.widget.TextInputLayout>
 
-        </LinearLayout>
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_button_login"
+                    android:theme="@style/RaiseButtonDark"
+                    />
+
+            </LinearLayout>
+
+
+        </ScrollView>
 
 
     </LinearLayout>
